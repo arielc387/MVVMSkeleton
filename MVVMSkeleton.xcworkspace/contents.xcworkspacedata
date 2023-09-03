@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "MVVMSkeleton">
+      <Group
+         location = "container:Presentation"
+         name = "Presentation">
+         <FileRef
+            location = "group:UI/UI.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:OrchestratorApp/OrchestratorApp.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "container:Domain"
+         name = "Domain">
+         <FileRef
+            location = "group:Domain/Domain.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "container:Data"
+         name = "Data">
+         <FileRef
+            location = "group:Networking/Networking.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:Repositories/Repositories.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "container:Utils"
+         name = "Utils">
+         <FileRef
+            location = "group:Common/Common.xcodeproj">
+         </FileRef>
+      </Group>
+   </Group>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

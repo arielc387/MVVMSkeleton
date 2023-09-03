@@ -1,0 +1,6 @@
+framework module Pods_OrchestratorApp_OrchestratorAppUITests {
+  umbrella header "Pods-OrchestratorApp-OrchestratorAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
