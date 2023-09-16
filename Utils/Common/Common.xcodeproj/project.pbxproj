@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07FDDB1B2AA42A4300AD4DB2 /* Common.docc in Sources */ = {isa = PBXBuildFile; fileRef = 07FDDB1A2AA42A4300AD4DB2 /* Common.docc */; };
+		077AFF952AAE18B60046CC80 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AFF912AAE18B60046CC80 /* String+Localized.swift */; };
 		07FDDB212AA42A4400AD4DB2 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FDDB162AA42A4300AD4DB2 /* Common.framework */; };
 		07FDDB262AA42A4400AD4DB2 /* CommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FDDB252AA42A4400AD4DB2 /* CommonTests.swift */; };
-		07FDDB272AA42A4400AD4DB2 /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = 07FDDB192AA42A4300AD4DB2 /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		692C3009224F16B18177896D /* Pods_CommonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3C5E92428DDBAE7450F85AB /* Pods_CommonTests.framework */; };
 		D0573D013167578E3063042D /* Pods_Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC039BD6D60629D1CDF3222 /* Pods_Common.framework */; };
 /* End PBXBuildFile section */
@@ -26,9 +25,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		077AFF912AAE18B60046CC80 /* String+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		07FDDB162AA42A4300AD4DB2 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		07FDDB192AA42A4300AD4DB2 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
-		07FDDB1A2AA42A4300AD4DB2 /* Common.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Common.docc; sourceTree = "<group>"; };
 		07FDDB202AA42A4400AD4DB2 /* CommonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FDDB252AA42A4400AD4DB2 /* CommonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTests.swift; sourceTree = "<group>"; };
 		3DCCD4DF3DBA86A0B537AC89 /* Pods-CommonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonTests.release.xcconfig"; path = "Target Support Files/Pods-CommonTests/Pods-CommonTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +67,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		077AFF8F2AAE18B60046CC80 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				077AFF912AAE18B60046CC80 /* String+Localized.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		07FDDB0C2AA42A4300AD4DB2 = {
 			isa = PBXGroup;
 			children = (
@@ -92,8 +98,7 @@
 		07FDDB182AA42A4300AD4DB2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				07FDDB192AA42A4300AD4DB2 /* Common.h */,
-				07FDDB1A2AA42A4300AD4DB2 /* Common.docc */,
+				077AFF8F2AAE18B60046CC80 /* Extensions */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -125,7 +130,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07FDDB272AA42A4400AD4DB2 /* Common.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07FDDB1B2AA42A4300AD4DB2 /* Common.docc in Sources */,
+				077AFF952AAE18B60046CC80 /* String+Localized.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +491,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6B6D882524762B24EF5E0F62 /* Pods-CommonTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -503,6 +508,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3DCCD4DF3DBA86A0B537AC89 /* Pods-CommonTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

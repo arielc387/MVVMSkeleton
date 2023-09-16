@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07FDDAAF2AA4294200AD4DB2 /* Repositories.docc in Sources */ = {isa = PBXBuildFile; fileRef = 07FDDAAE2AA4294200AD4DB2 /* Repositories.docc */; };
+		077AFF9A2AAE1CE60046CC80 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AFF982AAE1CE60046CC80 /* BaseRepository.swift */; };
+		077AFF9B2AAE1CE60046CC80 /* StoreRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AFF992AAE1CE60046CC80 /* StoreRepository.swift */; };
+		077AFF9D2AAE208A0046CC80 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077AFF9C2AAE208A0046CC80 /* Networking.framework */; };
+		077AFF9E2AAE208A0046CC80 /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 077AFF9C2AAE208A0046CC80 /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		07FDDAB52AA4294200AD4DB2 /* Repositories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FDDAAA2AA4294200AD4DB2 /* Repositories.framework */; };
 		07FDDABA2AA4294200AD4DB2 /* RepositoriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FDDAB92AA4294200AD4DB2 /* RepositoriesTests.swift */; };
-		07FDDABB2AA4294200AD4DB2 /* Repositories.h in Headers */ = {isa = PBXBuildFile; fileRef = 07FDDAAD2AA4294200AD4DB2 /* Repositories.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07FDDB582AA430E000AD4DB2 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FDDB562AA430E000AD4DB2 /* Common.framework */; };
 		07FDDB592AA430E000AD4DB2 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 07FDDB562AA430E000AD4DB2 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		07FDDB5A2AA430E000AD4DB2 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FDDB572AA430E000AD4DB2 /* Domain.framework */; };
@@ -38,6 +40,7 @@
 			files = (
 				07FDDB5B2AA430E000AD4DB2 /* Domain.framework in Embed Frameworks */,
 				07FDDB592AA430E000AD4DB2 /* Common.framework in Embed Frameworks */,
+				077AFF9E2AAE208A0046CC80 /* Networking.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,9 +48,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		077AFF982AAE1CE60046CC80 /* BaseRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		077AFF992AAE1CE60046CC80 /* StoreRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreRepository.swift; sourceTree = "<group>"; };
+		077AFF9C2AAE208A0046CC80 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FDDAAA2AA4294200AD4DB2 /* Repositories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Repositories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		07FDDAAD2AA4294200AD4DB2 /* Repositories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Repositories.h; sourceTree = "<group>"; };
-		07FDDAAE2AA4294200AD4DB2 /* Repositories.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Repositories.docc; sourceTree = "<group>"; };
 		07FDDAB42AA4294200AD4DB2 /* RepositoriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepositoriesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FDDAB92AA4294200AD4DB2 /* RepositoriesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesTests.swift; sourceTree = "<group>"; };
 		07FDDB562AA430E000AD4DB2 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				077AFF9D2AAE208A0046CC80 /* Networking.framework in Frameworks */,
 				07FDDB5A2AA430E000AD4DB2 /* Domain.framework in Frameworks */,
 				07FDDB582AA430E000AD4DB2 /* Common.framework in Frameworks */,
 				8434280549A3676AA8819B70 /* Pods_Repositories.framework in Frameworks */,
@@ -106,8 +111,8 @@
 		07FDDAAC2AA4294200AD4DB2 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				07FDDAAD2AA4294200AD4DB2 /* Repositories.h */,
-				07FDDAAE2AA4294200AD4DB2 /* Repositories.docc */,
+				077AFF982AAE1CE60046CC80 /* BaseRepository.swift */,
+				077AFF992AAE1CE60046CC80 /* StoreRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 		07FDDB552AA430E000AD4DB2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				077AFF9C2AAE208A0046CC80 /* Networking.framework */,
 				07FDDB562AA430E000AD4DB2 /* Common.framework */,
 				07FDDB572AA430E000AD4DB2 /* Domain.framework */,
 				FF5AC045707BA797117283A0 /* Pods_Repositories.framework */,
@@ -150,7 +156,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07FDDABB2AA4294200AD4DB2 /* Repositories.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +213,7 @@
 				TargetAttributes = {
 					07FDDAA92AA4294200AD4DB2 = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 					};
 					07FDDAB32AA4294200AD4DB2 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -302,7 +308,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07FDDAAF2AA4294200AD4DB2 /* Repositories.docc in Sources */,
+				077AFF9A2AAE1CE60046CC80 /* BaseRepository.swift in Sources */,
+				077AFF9B2AAE1CE60046CC80 /* StoreRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +456,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 54E8CEE09DD7AE9F5D660EE5 /* Pods-Repositories.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -472,6 +480,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -481,6 +490,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EBB1C027632191BE2240B2FE /* Pods-Repositories.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -513,6 +523,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 834F4550AE3D167FA6D3E8B8 /* Pods-RepositoriesTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -529,6 +540,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ECE38BBF374191D5A2141A7B /* Pods-RepositoriesTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

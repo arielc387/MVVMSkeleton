@@ -7,10 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07FDDA672AA41C4E00AD4DB2 /* UI.docc in Sources */ = {isa = PBXBuildFile; fileRef = 07FDDA662AA41C4E00AD4DB2 /* UI.docc */; };
+		077A008B2AAEC55F0046CC80 /* DefaultRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AFFA22AAEC55F0046CC80 /* DefaultRouter.swift */; };
+		077A009B2AAEC55F0046CC80 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AFFB72AAEC55F0046CC80 /* BaseViewModel.swift */; };
+		077A009D2AAEC55F0046CC80 /* JokesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AFFBA2AAEC55F0046CC80 /* JokesViewModel.swift */; };
+		077A010B2AAEC5600046CC80 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077A00372AAEC55F0046CC80 /* BaseViewController.swift */; };
+		077A01272AAEC5600046CC80 /* JokesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 077A00572AAEC55F0046CC80 /* JokesView.xib */; };
+		077A01292AAEC5600046CC80 /* JokesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077A00592AAEC55F0046CC80 /* JokesViewController.swift */; };
+		077A01342AAEC5600046CC80 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077A00652AAEC55F0046CC80 /* UIViewController+Extensions.swift */; };
+		077A013A2AAEC5600046CC80 /* ViewRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077A006E2AAEC55F0046CC80 /* ViewRouterProtocol.swift */; };
+		077A013B2AAEC5600046CC80 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077A006F2AAEC55F0046CC80 /* ViewModelProtocol.swift */; };
+		077A013F2AAEC5600046CC80 /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077A00732AAEC55F0046CC80 /* RouterProtocol.swift */; };
+		077A01422AAEC5600046CC80 /* ViewBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077A00762AAEC55F0046CC80 /* ViewBuilderProtocol.swift */; };
+		077A01442AAEC5600046CC80 /* JokesViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077A00792AAEC55F0046CC80 /* JokesViewBuilder.swift */; };
+		077A014A2AAEC5600046CC80 /* SegueType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077A00802AAEC55F0046CC80 /* SegueType.swift */; };
+		07BCDA0D2AB5401A00DBFC59 /* JokesViewModel+Routers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BCDA0C2AB5401A00DBFC59 /* JokesViewModel+Routers.swift */; };
 		07FDDA6D2AA41C4E00AD4DB2 /* UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FDDA622AA41C4E00AD4DB2 /* UI.framework */; };
 		07FDDA722AA41C4E00AD4DB2 /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FDDA712AA41C4E00AD4DB2 /* UITests.swift */; };
-		07FDDA732AA41C4E00AD4DB2 /* UI.h in Headers */ = {isa = PBXBuildFile; fileRef = 07FDDA652AA41C4E00AD4DB2 /* UI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07FDDB432AA430B100AD4DB2 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FDDB412AA430B100AD4DB2 /* Common.framework */; };
 		07FDDB442AA430B100AD4DB2 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 07FDDB412AA430B100AD4DB2 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		07FDDB452AA430B100AD4DB2 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FDDB422AA430B100AD4DB2 /* Domain.framework */; };
@@ -45,9 +57,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		077A00372AAEC55F0046CC80 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		077A00572AAEC55F0046CC80 /* JokesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JokesView.xib; sourceTree = "<group>"; };
+		077A00592AAEC55F0046CC80 /* JokesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokesViewController.swift; sourceTree = "<group>"; };
+		077A00652AAEC55F0046CC80 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		077A006E2AAEC55F0046CC80 /* ViewRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewRouterProtocol.swift; sourceTree = "<group>"; };
+		077A006F2AAEC55F0046CC80 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		077A00732AAEC55F0046CC80 /* RouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
+		077A00762AAEC55F0046CC80 /* ViewBuilderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewBuilderProtocol.swift; sourceTree = "<group>"; };
+		077A00792AAEC55F0046CC80 /* JokesViewBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokesViewBuilder.swift; sourceTree = "<group>"; };
+		077A00802AAEC55F0046CC80 /* SegueType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueType.swift; sourceTree = "<group>"; };
+		077AFFA22AAEC55F0046CC80 /* DefaultRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultRouter.swift; sourceTree = "<group>"; };
+		077AFFB72AAEC55F0046CC80 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		077AFFBA2AAEC55F0046CC80 /* JokesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokesViewModel.swift; sourceTree = "<group>"; };
+		07BCDA0C2AB5401A00DBFC59 /* JokesViewModel+Routers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JokesViewModel+Routers.swift"; sourceTree = "<group>"; };
 		07FDDA622AA41C4E00AD4DB2 /* UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		07FDDA652AA41C4E00AD4DB2 /* UI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UI.h; sourceTree = "<group>"; };
-		07FDDA662AA41C4E00AD4DB2 /* UI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = UI.docc; sourceTree = "<group>"; };
 		07FDDA6C2AA41C4E00AD4DB2 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FDDA712AA41C4E00AD4DB2 /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
 		07FDDB412AA430B100AD4DB2 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +107,109 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		077A00152AAEC55F0046CC80 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				077A00352AAEC55F0046CC80 /* Views */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		077A00352AAEC55F0046CC80 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				077A00372AAEC55F0046CC80 /* BaseViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		077A00542AAEC55F0046CC80 /* Jokes */ = {
+			isa = PBXGroup;
+			children = (
+				077A00572AAEC55F0046CC80 /* JokesView.xib */,
+				077A00592AAEC55F0046CC80 /* JokesViewController.swift */,
+			);
+			path = Jokes;
+			sourceTree = "<group>";
+		};
+		077A005F2AAEC55F0046CC80 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				077A00652AAEC55F0046CC80 /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		077A006D2AAEC55F0046CC80 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				077A006E2AAEC55F0046CC80 /* ViewRouterProtocol.swift */,
+				077A006F2AAEC55F0046CC80 /* ViewModelProtocol.swift */,
+				077A00732AAEC55F0046CC80 /* RouterProtocol.swift */,
+				077A00762AAEC55F0046CC80 /* ViewBuilderProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		077A00772AAEC55F0046CC80 /* ViewBuilders */ = {
+			isa = PBXGroup;
+			children = (
+				077A00792AAEC55F0046CC80 /* JokesViewBuilder.swift */,
+			);
+			path = ViewBuilders;
+			sourceTree = "<group>";
+		};
+		077A007D2AAEC55F0046CC80 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				077A00802AAEC55F0046CC80 /* SegueType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		077AFF9F2AAEC55F0046CC80 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				077AFFA22AAEC55F0046CC80 /* DefaultRouter.swift */,
+				07BCDA0C2AB5401A00DBFC59 /* JokesViewModel+Routers.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		077AFFA42AAEC55F0046CC80 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				077AFFB62AAEC55F0046CC80 /* Common */,
+				077AFFB92AAEC55F0046CC80 /* Jokes */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		077AFFB62AAEC55F0046CC80 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				077AFFB72AAEC55F0046CC80 /* BaseViewModel.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		077AFFB92AAEC55F0046CC80 /* Jokes */ = {
+			isa = PBXGroup;
+			children = (
+				077AFFBA2AAEC55F0046CC80 /* JokesViewModel.swift */,
+			);
+			path = Jokes;
+			sourceTree = "<group>";
+		};
+		077AFFBD2AAEC55F0046CC80 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				077A00152AAEC55F0046CC80 /* Common */,
+				077A00542AAEC55F0046CC80 /* Jokes */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		07FDDA582AA41C4E00AD4DB2 = {
 			isa = PBXGroup;
 			children = (
@@ -106,8 +233,13 @@
 		07FDDA642AA41C4E00AD4DB2 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				07FDDA652AA41C4E00AD4DB2 /* UI.h */,
-				07FDDA662AA41C4E00AD4DB2 /* UI.docc */,
+				077A005F2AAEC55F0046CC80 /* Extensions */,
+				077A007D2AAEC55F0046CC80 /* Models */,
+				077A006D2AAEC55F0046CC80 /* Protocols */,
+				077AFF9F2AAEC55F0046CC80 /* Routers */,
+				077A00772AAEC55F0046CC80 /* ViewBuilders */,
+				077AFFA42AAEC55F0046CC80 /* ViewModels */,
+				077AFFBD2AAEC55F0046CC80 /* Views */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -150,7 +282,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07FDDA732AA41C4E00AD4DB2 /* UI.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +369,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				077A01272AAEC5600046CC80 /* JokesView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,7 +434,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07FDDA672AA41C4E00AD4DB2 /* UI.docc in Sources */,
+				077A014A2AAEC5600046CC80 /* SegueType.swift in Sources */,
+				077A013B2AAEC5600046CC80 /* ViewModelProtocol.swift in Sources */,
+				077A01292AAEC5600046CC80 /* JokesViewController.swift in Sources */,
+				077A010B2AAEC5600046CC80 /* BaseViewController.swift in Sources */,
+				077A01442AAEC5600046CC80 /* JokesViewBuilder.swift in Sources */,
+				07BCDA0D2AB5401A00DBFC59 /* JokesViewModel+Routers.swift in Sources */,
+				077A01422AAEC5600046CC80 /* ViewBuilderProtocol.swift in Sources */,
+				077A008B2AAEC55F0046CC80 /* DefaultRouter.swift in Sources */,
+				077A013A2AAEC5600046CC80 /* ViewRouterProtocol.swift in Sources */,
+				077A009B2AAEC55F0046CC80 /* BaseViewModel.swift in Sources */,
+				077A013F2AAEC5600046CC80 /* RouterProtocol.swift in Sources */,
+				077A01342AAEC5600046CC80 /* UIViewController+Extensions.swift in Sources */,
+				077A009D2AAEC55F0046CC80 /* JokesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +657,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CFB92764136B6C47D0484FAE /* Pods-UITests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -529,6 +674,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8F045422C3F39C8D24BD858A /* Pods-UITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

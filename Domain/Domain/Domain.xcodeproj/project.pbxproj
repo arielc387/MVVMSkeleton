@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		077AFF6E2AAE0F2F0046CC80 /* AppTypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AFF442AAE0F2E0046CC80 /* AppTypeAlias.swift */; };
+		077AFF7C2AAE0F2F0046CC80 /* JokeRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AFF552AAE0F2E0046CC80 /* JokeRepositoryProtocol.swift */; };
+		077AFF802AAE0F2F0046CC80 /* ConfigProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AFF5A2AAE0F2E0046CC80 /* ConfigProtocol.swift */; };
+		077AFF812AAE0F2F0046CC80 /* JokeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AFF5C2AAE0F2E0046CC80 /* JokeModel.swift */; };
+		077AFF822AAE0F2F0046CC80 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AFF602AAE0F2F0046CC80 /* AppError.swift */; };
+		077AFF862AAE0F2F0046CC80 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AFF642AAE0F2F0046CC80 /* AppConfig.swift */; };
 		07FDDAD32AA4299900AD4DB2 /* Domain.docc in Sources */ = {isa = PBXBuildFile; fileRef = 07FDDAD22AA4299900AD4DB2 /* Domain.docc */; };
 		07FDDAD92AA4299A00AD4DB2 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FDDACE2AA4299900AD4DB2 /* Domain.framework */; };
 		07FDDADE2AA4299A00AD4DB2 /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FDDADD2AA4299A00AD4DB2 /* DomainTests.swift */; };
@@ -42,6 +48,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		077AFF442AAE0F2E0046CC80 /* AppTypeAlias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTypeAlias.swift; sourceTree = "<group>"; };
+		077AFF552AAE0F2E0046CC80 /* JokeRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeRepositoryProtocol.swift; sourceTree = "<group>"; };
+		077AFF5A2AAE0F2E0046CC80 /* ConfigProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigProtocol.swift; sourceTree = "<group>"; };
+		077AFF5C2AAE0F2E0046CC80 /* JokeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeModel.swift; sourceTree = "<group>"; };
+		077AFF602AAE0F2F0046CC80 /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		077AFF642AAE0F2F0046CC80 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		07FDDACE2AA4299900AD4DB2 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FDDAD12AA4299900AD4DB2 /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
 		07FDDAD22AA4299900AD4DB2 /* Domain.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Domain.docc; sourceTree = "<group>"; };
@@ -78,6 +90,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		077AFF432AAE0F2E0046CC80 /* TypeAliases */ = {
+			isa = PBXGroup;
+			children = (
+				077AFF442AAE0F2E0046CC80 /* AppTypeAlias.swift */,
+			);
+			path = TypeAliases;
+			sourceTree = "<group>";
+		};
+		077AFF452AAE0F2E0046CC80 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		077AFF532AAE0F2E0046CC80 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				077AFF542AAE0F2E0046CC80 /* Repository */,
+				077AFF592AAE0F2E0046CC80 /* Config */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		077AFF542AAE0F2E0046CC80 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				077AFF552AAE0F2E0046CC80 /* JokeRepositoryProtocol.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		077AFF592AAE0F2E0046CC80 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				077AFF5A2AAE0F2E0046CC80 /* ConfigProtocol.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		077AFF5F2AAE0F2E0046CC80 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				077AFF602AAE0F2F0046CC80 /* AppError.swift */,
+				077AFF642AAE0F2F0046CC80 /* AppConfig.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		077AFF652AAE0F2F0046CC80 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				077AFF5C2AAE0F2E0046CC80 /* JokeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		07FDDAC42AA4299900AD4DB2 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +170,11 @@
 		07FDDAD02AA4299900AD4DB2 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				077AFF5F2AAE0F2E0046CC80 /* Enums */,
+				077AFF452AAE0F2E0046CC80 /* DTOs */,
+				077AFF652AAE0F2F0046CC80 /* Models */,
+				077AFF532AAE0F2E0046CC80 /* Protocols */,
+				077AFF432AAE0F2E0046CC80 /* TypeAliases */,
 				07FDDAD12AA4299900AD4DB2 /* Domain.h */,
 				07FDDAD22AA4299900AD4DB2 /* Domain.docc */,
 			);
@@ -296,7 +370,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				077AFF802AAE0F2F0046CC80 /* ConfigProtocol.swift in Sources */,
+				077AFF822AAE0F2F0046CC80 /* AppError.swift in Sources */,
+				077AFF812AAE0F2F0046CC80 /* JokeModel.swift in Sources */,
+				077AFF6E2AAE0F2F0046CC80 /* AppTypeAlias.swift in Sources */,
 				07FDDAD32AA4299900AD4DB2 /* Domain.docc in Sources */,
+				077AFF7C2AAE0F2F0046CC80 /* JokeRepositoryProtocol.swift in Sources */,
+				077AFF862AAE0F2F0046CC80 /* AppConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +587,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A6E19CDBEB3919AB0AF87484 /* Pods-DomainTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -523,6 +604,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6D14D34F0E4170DF3E7DDCA5 /* Pods-DomainTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
